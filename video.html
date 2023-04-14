@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Susifier</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="CCapture.min.js"></script> -->
+    <script src="whammy.min.js"></script>
+    <!-- <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.10.0/dist/ffmpeg.min.js"></script> -->
+    <script src="ffmpeg.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turn your pixels into tiny crewmates!">
+    <meta name="keywords" content="sus, susify, susifier, susified, amongus, amogus">
+    <meta name="author" content="Duckyluuk">
+    <meta name="theme-color" content="#ff0000">
+    <meta property="og:title" content="Susifier">
+    <meta property="og:description" content="Turn your pixels into tiny crewmates!">
+    <meta name="og:image" itemprop="image" content="./images/sus_crewmate.png">
+    <meta property="og:url" content="https://susify.duckyluuk.com">
+    <meta property="og:site_name" content="Susifier">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+  </head>
+  <body>
+    
+    <div id="menu">
+        <h1>Welcome to Susify!</h1>
+        <h2>We can make all your videos extremely SUS!</h2>
+        <p>When you upload a video below, the idea of pixels will be completely forgotten. Instead, your  willvideo be rebuilt completely with a grid of tiny crewmates!</p>
+        <p style="color:#bbbbbb"><i>This is a beta feature, issues may still occur when Susifying your videos. If the program crashes, try a shorter video or lower framerate.</i></p>
+        <br>
+        <p><a href="./">Susify an image instead!</a></p><br>
+        Sus-Size: <span id="size-out">2</span><br>1 <input type="range" id="size" min="1" max="10" value="2" class="slider"> 10<br>
+        Contrast: <span id="contrast-out">8</span><br>0 <input type="range" id="offset" min="0" max="50" value="8" class="slider"> 50<br>
+        Fps: <span id="fps-out">15</span><br>1 <input type="range" id="fps" min="1" max="60" value="15" class="slider"> 60<br>
+        Audio: <input type="checkbox" id="audio" checked><br>
+        <div id="fileinput">
+            Select Video<br>
+            <p id="disclaimer">Your video never leaves your device! All the converting is done on your machine.</p>
+            <input type="file" id="file" accept="video/mp4, video/webm"/>
+        </div>
+        <p id="coffee">If you enjoy this service, you can <a href="https://www.buymeacoffee.com/duckyluuk">support me here</a>!</p>
+    </div>
+    <div id="output">
+        <h1><span id="status">Making Sus...</span><span id="progress"></span><span id="goal"></span></h1>
+        <canvas id="canvas"></canvas>
+        <br>
+        <div id="final">
+        <span id="info"></span><br>
+        <button id="download" onclick="downloadCanvas();">Download</button>
+        <button id="reset" onclick="reset();">Another One!</button><br>
+        <p id="output-coffee">If you enjoy this service, you can <a href="https://www.buymeacoffee.com/duckyluuk">support me here</a>!</p>
+    </div>
+    <script src = "video.js"></script>
+  </body>
+</html>

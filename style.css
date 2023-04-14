@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #424549;
+    font-family: 'Roboto', sans-serif;
+}
+
+#canvas {
+    position: relative;
+    left: 100px;
+    top: 50px;
+    padding: 0;
+    display: block;
+    image-rendering: pixelated;
+}
+
+#fileinput, #download, #reset {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 85px;
+    left: 0;
+    top: 30px;
+    margin: auto;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    background-color: #1e2124;
+    border: 5px solid black;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#download, #reset {
+    line-height: 60px;
+    height: 75px;
+    top: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+
+#info {
+    position: relative;
+    top: 50px;
+}
+
+#file {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#menu {
+    color: #ffffff;
+    background-color: #36393e;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 700px;
+    height: 500px;
+    border-radius: 50px;
+}
+
+#output {
+    color: #ffffff;
+    background-color: #36393e;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    display: block;
+    position:static;
+    top: 0;	
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    border-radius: 50px;
+}
+
+a {
+    color: #ffffff;
+}
+
+#coffee {
+    position: relative;
+    top: 40px;
+    width: 100%;
+}
+
+#output-coffee {
+    position: relative;
+    top: 70px;
+    width: 100%;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 50%; /* Full-width */
+    height: 12px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 25px;
+}
+  
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #F00;
+    cursor: pointer;
+    border-radius: 50%;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #F00;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#disclaimer {
+    font-size: 12px;
+    color: #bbbbbb;
+    position: absolute;
+    bottom: 0;
+    line-height: 10px;
+    margin: 10px;
+}
